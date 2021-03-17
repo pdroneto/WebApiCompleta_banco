@@ -264,6 +264,7 @@
   <ItemGroup>
     <Content Include="App_Data\base.json" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\apidotnet - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\WebApiAula - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
