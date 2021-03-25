@@ -4,10 +4,17 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using WebApi.Models;
+
 
 namespace WebApi.Controllers
 {
+    /* Nesta parte eu estou fazendo a decoração da nossa API, ou seja, é através desses comandos que serão permitidos
+    os acessos externos a nossa API.
+    Para utilizar o EnableCors é necessário referenciar corretamente using System.Web.Http.Cors
+     */
+    [EnableCors("*","*","*")]
     public class AlunoController : ApiController
     {
         // GET: api/Aluno

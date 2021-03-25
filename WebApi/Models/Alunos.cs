@@ -19,7 +19,7 @@ namespace WebApi.Models
         // O método abaixo retorna uma lista com cada aluno do meu arquivo base.json
         public List<Alunos> ListaAlunos()
         {
-            var caminhoArquivo = HostingEnvironment.MapPath(@"~/App_Data\base.json");
+            var caminhoArquivo = HostingEnvironment.MapPath(@"~/App_Data\base.json");           
             var json = File.ReadAllText(caminhoArquivo);
             var listaAlunos = JsonConvert.DeserializeObject<List<Alunos>>(json);
 
@@ -58,8 +58,8 @@ namespace WebApi.Models
             ListaAlunos.Add(Aluno);
             ReescreverArquivo(ListaAlunos);
             return Aluno;
-
-        }
+               
+          }
         /*
          Primeira coisa que o meu método de atualizar faz é criar uma variável ListaAluos para receber os dados da função ListaAlunos();
         eu criei uma variável itemIndex que recebe a busca dentro da minha lista do id do aluno que foi passado por parâmetro

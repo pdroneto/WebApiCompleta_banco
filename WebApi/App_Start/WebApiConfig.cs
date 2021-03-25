@@ -11,6 +11,9 @@ namespace WebApi
         {
             // Serviços e configuração da API da Web
 
+            //É necessário ativar o Cors neste arquivo de configuração.
+            config.EnableCors();
+
             // Rotas da API da Web
             config.MapHttpAttributeRoutes();
 
